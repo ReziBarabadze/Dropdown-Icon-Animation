@@ -1,0 +1,40 @@
+body{
+  background-color: #d5d0d6;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dropdown_icon{
+  position: relative;
+  width: 240px;
+  height: 150px;
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.dropdown_icon span{
+  display: inline-block;
+  position: absolute;
+  width: 120px;
+  height: 20px;
+  background-color: #7f0099;
+  border-radius: 40px;
+  transition: .5s ;
+}
+.dropdown_icon span:nth-child(1){
+  left: 24px;
+  transform: rotate(45deg);
+}
+.dropdown_icon:hover span:nth-child(1){
+  transform: rotate(135deg);
+}
+.dropdown_icon span:nth-child(2){
+  right: 24px;
+  transform: rotate(-45deg);
+}
+.dropdown_icon:hover span:nth-child(2){
+  transform: rotate(-135deg);
+}
